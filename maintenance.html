@@ -1,21 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mobile View - maintenance</title>
-	<link rel="stylesheet" href="assets/css/tailwind.css">
-	<link rel="stylesheet" href="assets/css/global.css">
-	<link rel="stylesheet" href="assets/css/reset.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-</head>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mobile View - Maintenance</title>
+		
+		<!-- Reset CSS	-->
+		<style>
+			html,
+			body {
+				margin: 0 auto !important;
+				padding: 0 !important;
+				height: 100% !important;
+				width: 100% !important;
+				background: #fff;
+			}
+			
+			/* What it does: Stops email clients resizing small text. */
+			* {
+				-ms-text-size-adjust: 100%;
+				-webkit-text-size-adjust: 100%;
+			}
+			
+			/* What it does: Centers email on Android 4.4 */
+			div[style*="margin: 16px 0"] {
+				margin: 0 !important;
+			}
+			
+			/* What it does: Stops Outlook from adding extra spacing to tables. */
+			table,
+			td {
+				mso-table-lspace: 0pt !important;
+				mso-table-rspace: 0pt !important;
+			}
+			
+			/* What it does: Fixes webkit padding issue. */
+			/*table {*/
+			/*	border-spacing: 0 !important;*/
+			/*	border-collapse: collapse !important;*/
+			/*	table-layout: fixed !important;*/
+			/*	margin: 0 auto !important;*/
+			/*}*/
+			
+			/* What it does: Uses a better rendering method when resizing images in IE. */
+			img {
+				-ms-interpolation-mode:bicubic;
+			}
+			
+			/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+			a {
+				text-decoration: none;
+			}
+			
+			/* What it does: A work-around for email clients meddling in triggered links. */
+			*[x-apple-data-detectors],  /* iOS */
+			.unstyle-auto-detected-links *,
+			.aBn {
+				border-bottom: 0 !important;
+				cursor: default !important;
+				color: inherit !important;
+				text-decoration: none !important;
+				font-size: inherit !important;
+				font-family: inherit !important;
+				font-weight: inherit !important;
+				line-height: inherit !important;
+			}
+			
+			/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+			.a6S {
+				display: none !important;
+				opacity: 0.01 !important;
+			}
+			
+			/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+			.im {
+				color: inherit !important;
+			}
+			
+			/* If the above doesn't work, add a .g-img class to any image in question. */
+			img.g-img + div {
+				display: none !important;
+			}
+			
+			/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+			/* Create one of these media queries for each additional viewport size you'd like to fix */
+			
+			/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+			@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+				u ~ div .email-container {
+					min-width: 320px !important;
+				}
+			}
+			/* iPhone 6, 6S, 7, 8, and X */
+			@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+				u ~ div .email-container {
+					min-width: 375px !important;
+				}
+			}
+			/* iPhone 6+, 7+, and 8+ */
+			@media only screen and (min-device-width: 414px) {
+				u ~ div .email-container {
+					min-width: 414px !important;
+				}
+			}
+		</style>
+		<!-- End Reset CSS	-->
+		
+		<style>
+			body{
+				font-family: 'Roboto', sans-serif;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 16px;
+				color: #000000;
+			}
+			
+			a{
+				color: #2b6cb0;
+			}
+		</style>
+		
+	</head>
+
+	
 <body>
-<div>
+	<div style="max-width: 420px!important; margin: 0 auto;">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" style="width: 100%!important; padding: 1.25rem">
+			<table align="center" bgcolor="#ffffff" style="background-color: #ffffff; padding: 2rem 3rem;">
+				<tr>
+					<td>
+						<p style="text-align: center">
+							<span>
+								<img src="maintenance-mobile.png">
+							</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">
+						<p style="font-weight: 600; font-size: 14px;">
+							Opps, Our Friend is Under Maintenance 
+						</p>
+						<p style="padding: 0 2rem; margin-bottom: 2rem;">
+							Our website is currently under maintenance. And we decide to open on Apps was done and ready to go!
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">
+						<p>Download and available on :</p>
+						<p>
+							<a href="#">
+								<img src="google.png">
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								<img src="appstore.png">
+							</a>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4" align="center">
+						<p style="font-size: 11.5px">
+							&copy; 2020 Game Consign. All Right Reserved, <br>
+							My Republic Plaza, BSD City, Tangerang. 15345
+						</p>
+					</td>
+				</tr>
+			</table>
+		</table>
+	</div>
+<!-- <div>
 	<div class="sm:max-w-full xl:max-w-xl mx-auto">
 		<div class="xl:p-5 sm:px-5 sm:py-10">
 			
 			<div class="m-auto xl:pt-10  sm:py-1 xl:py-0">
 				<div class="text-center">
-					<img src="assets/img/maintenance-desk.png" class="mx-auto sm:transform sm:scale-90 xl:scale-95 w-full" alt="">
+					<img src="maintenance-mobile.png" class="mx-auto sm:transform sm:scale-90 xl:scale-95 w-full" alt="">
 				</div>
 			</div>
 			
@@ -36,10 +198,10 @@
 				</div>
 				<div class="w-3/5 m-auto xl:flex justify-center">
 					<div class="xl:w-1/2 sm:w-full sm:mb-3">
-						<img src="assets/img/google.png" class=" mx-auto w-auto" alt="">
+						<img src="google.png" class=" mx-auto w-auto" alt="">
 					</div>
 					<div class="xl:w-1/2 sm:w-full sm:mb-3">
-						<img src="assets/img/appstore.png" class="mx-auto w-auto" alt="">
+						<img src="appstore.png" class="mx-auto w-auto" alt="">
 					</div>
 				</div>
 				<p class="xl:leading-6 sm:leading-5 sm:px-12  xl:py-0 sm:text-xs xl:text-sm sm:my-10 xl:my-5">
@@ -49,6 +211,6 @@
 			
 		</div>
 	</div>
-</div>
+</div> -->
 </body>
 </html>

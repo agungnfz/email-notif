@@ -2,113 +2,215 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mobile View - Barang sampai</title>
-	<link rel="stylesheet" href="assets/css/tailwind.css">
-	<link rel="stylesheet" href="assets/css/global.css">
-	<link rel="stylesheet" href="assets/css/reset.css">
-	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Mobile View - Barang DIkirim Seller</title>
+	
+	<!-- Reset CSS	-->
+	<style>
+		html,
+		body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			height: 100% !important;
+			width: 100% !important;
+			background: #EFEFEF;
+		}
+		
+		/* What it does: Stops email clients resizing small text. */
+		* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+		
+		/* What it does: Centers email on Android 4.4 */
+		div[style*="margin: 16px 0"] {
+			margin: 0 !important;
+		}
+		
+		/* What it does: Stops Outlook from adding extra spacing to tables. */
+		table,
+		td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+		}
+		
+		/* What it does: Fixes webkit padding issue. */
+		/*table {*/
+		/*	border-spacing: 0 !important;*/
+		/*	border-collapse: collapse !important;*/
+		/*	table-layout: fixed !important;*/
+		/*	margin: 0 auto !important;*/
+		/*}*/
+		
+		/* What it does: Uses a better rendering method when resizing images in IE. */
+		img {
+			-ms-interpolation-mode:bicubic;
+		}
+		
+		/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+		a {
+			text-decoration: none;
+		}
+		
+		/* What it does: A work-around for email clients meddling in triggered links. */
+		*[x-apple-data-detectors],  /* iOS */
+		.unstyle-auto-detected-links *,
+		.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+		
+		/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+		.a6S {
+			display: none !important;
+			opacity: 0.01 !important;
+		}
+		
+		/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+		.im {
+			color: inherit !important;
+		}
+		
+		/* If the above doesn't work, add a .g-img class to any image in question. */
+		img.g-img + div {
+			display: none !important;
+		}
+		
+		/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+		/* Create one of these media queries for each additional viewport size you'd like to fix */
+		
+		/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+		@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+			u ~ div .email-container {
+				min-width: 320px !important;
+			}
+		}
+		/* iPhone 6, 6S, 7, 8, and X */
+		@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+			u ~ div .email-container {
+				min-width: 375px !important;
+			}
+		}
+		/* iPhone 6+, 7+, and 8+ */
+		@media only screen and (min-device-width: 414px) {
+			u ~ div .email-container {
+				min-width: 414px !important;
+			}
+		}
+	</style>
+	<!-- End Reset CSS	-->
+	
+	<style>
+		body{
+			font-family: 'Roboto', sans-serif;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 16px;
+			color: #000000;
+		}
+		
+		a{
+			color: #2b6cb0;
+		}
+	</style>
 
 </head>
 <body>
 
-<div class="sm:min-h-screen" style="background:#EFEFEF">
-	<div class="sm:max-w-full xl:max-w-lg mx-auto">
-		<div class="xl:p-5 sm:px-4 sm:py-12">
-			
-			<div class="w-full bg-white rounded shadow-md">
-				<div class="px-5 py-8">
-					<div class="flex justify-center mb-5">
-						<div class="mx-1">
-							<img src="assets/img/logo-img.png" class="" alt="">
-						</div>
-						<div class="mx-1">
-							<img src="assets/img/logo-text.png" class="mt-1" alt="">
-						</div>
-					</div>
-					<div>
-						<div class="mb-5" style="font-size: 13px">
-							Status Pesanan
-						</div>
-						<div class="text-sm mb-3 leading-4">
-							Hai Consigner, saat ini pesanan sedang dalam proses pengiriman.
-						</div>
-						
-						<hr class="my-3">
-						
-						<div class="text-sm mb-3">
-							Detail Pesanan :
-						</div>
-						
-						<div class="bg-gray-200 rounded">
-							<div class="p-3">
-								<div>
-									<table class="table-auto w-full" style="font-size: 11px;">
-										<tr>
-											<td class="py-1">Invoice</td>
-											<td class="w-2 py-1">:</td>
-											<td class="py-1">
-												<div class="text-blue-500">
-													INV/GC/09128/09872121
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<td class="py-1">Nama Barang</td>
-											<td class="w-2 py-1">:</td>
-											<td class="py-1">Iphone 7 + Rosegold</td>
-										</tr>
-										<tr>
-											<td class="py-1">Tgl Upload</td>
-											<td class="w-2 py-1">:</td>
-											<td class="my-1">28 Agustus 2020 - 16.40</td>
-										</tr>
-										<tr>
-											<td class="py-1">Harga Barang</td>
-											<td class="w-2 py-1">:</td>
-											<td class="py-1">Rp 4.500.000</td>
-										</tr>
-										<tr>
-											<td class="pt-2">Kurir</td>
-											<td class="w-2 pt-2">:</td>
-											<td class="pt-2">JNE</td>
-										</tr>
-										<tr>
-											<td class="py-0">Nomor Resi</td>
-											<td class="w-0 py-2">:</td>
-											<td class="py-0">120941876349</td>
-										</tr>
-									</table>
-								</div>
-							</div>
-						</div>
-						
-						<div class="mt-4">
-							<div>
-								<ol class="list-decimal ml-5" style="font-size: 13px">
-									<li class="py-2">Kamu memiliki waktu <span class="font-semibold">48 jam</span> untuk memeriksa pesanan.</li>
-									<li class="py-2">Apabila barang bermasalah harap <span class="font-semibold">ajukan komplain</span>.</li>
-									<li class="py-2">Harap selesaikan pesanan kamu jika kamu merasa tidak bermasalah.</li>
-								</ol>
-							</div>
-						</div>
-						
-						<div class="text-center mt-6">
-							<button class="py-2 rounded-md w-3/4 text-center bg-blue-500 text-white">
-								Selesaikan Pesanan
-							</button>
-						</div>
-						
-						<hr class="my-5">
-						<div class="text-sm text-center leading-4" style="font-size: 11px">
-							&copy; 2020 Game Consign. All Right Reserved, <br>
-							My Republic Plaza, BSD City, Tangerang. 15345
-						</div>
-					</div>
-				</div>
-			
-			</div>
-		</div>
-	</div>
+<div style="padding: 1.25rem; max-width: 420px!important; margin: 0 auto;">
+	<table width="100%" cellspacing="0" cellpadding="0" border="0" style="width: 100%!important; padding: 1rem">
+		<table align="center" bgcolor="#ffffff" style="background-color: #ffffff; box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1); border-radius: 4px; padding: 1rem; ">
+			<tr>
+				<td>
+					<p style="text-align: center">
+						<span>
+							<img src="logo-img.png">
+						</span>
+						<span>
+							<img src="logo-text.png">
+						</span>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<p style="font-size: 13px;">
+						Pesanan Kamu Telah Diterima/Sampai
+					</p>
+					<p>
+						Hai Consigner, Pesanan kamu telah diterima oleh pembeli.
+					</p>
+					<p style="border: 1px solid #E0E0E0 ">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<p>Detail Pesanan :</p>
+					<table width="100%" style="font-size: 11px; line-height: 14px; background-color: #f2f2f2; padding: .5rem; border-radius: 5px">
+						<tr>
+							<td>Invoice</td>
+							<td>:</td>
+							<td><span style="color: #56ABDB">INV/GC/09128/09872121</span></td>
+						</tr>
+						<tr>
+							<td>Nama Barang</td>
+							<td>:</td>
+							<td>iPhone 7+ RoseGold</td>
+						</tr>
+						<tr>
+							<td>Tgl. Pemesanan</td>
+							<td>:</td>
+							<td>28 Agustus 2020 - 16.40</td>
+						</tr>
+						<tr>
+							<td>Harga Barang</td>
+							<td>:</td>
+							<td>Rp 4.500.000</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Kurir</td>
+							<td>:</td>
+							<td>JNE</td>
+						</tr>
+						<tr>
+							<td>Nomor Resi</td>
+							<td>:</td>
+							<td>120941876349</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<p>
+						Pesanan akan selesai ketika pembeli telah menerima pesanan dan pesanan dalam kondisi baik-baik saja.
+					</p>
+					<p>
+						Terimakasih!
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" align="center">
+					<p style="border: 1px solid #E0E0E0 ">
+					<p style="font-size: 11.5px">
+						&copy; 2020 Game Consign. All Right Reserved, <br>
+						My Republic Plaza, BSD City, Tangerang. 15345
+					</p>
+				</td>
+			</tr>
+		</table>
+	</table>
 </div>
 </body>
 </html>
